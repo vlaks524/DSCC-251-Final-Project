@@ -17,9 +17,9 @@ The project was developed in 2 stages:
 Repository Structure:
 - notebooks: Contains the code files for RoBERTa and TF-IDF+LR
 - results.zip: Contains images of the outputs after running the code
-- Sentences_75Agree.txt: Data file for code
-  
+Here's the link to download the Financial PhraseBank dataset: https://www.researchgate.net/publication/251231364_FinancialPhraseBank-v10
+
 Instructions for how to run the code files: I developed and tested this project using Google Colab, so these instructions show how to run it on there.
-1. Download and open the .ipynb files from the notebooks/ folder (I would recommend just running the TF_IDF+LR file, because it has my main results and takes way less time).
-2. Download the Sentences_75Agree.txt data file, and upload that into the Colab session. Change the file path in the notebook if needed (e.g. /content/Sentences_75Agree.txt).
+1. Download and open the .ipynb files from the notebooks/ folder (I would recommend just running the TF_IDF+LR file, because it has my main results and takes less time).
+2. Extract the Sentences_75Agree.txt file from the zipped Financial PhraseBank dataset, and upload that into the Colab session. Change the file path in the notebook if needed (e.g. /content/Sentences_75Agree.txt).
 3. Run all cells in order.

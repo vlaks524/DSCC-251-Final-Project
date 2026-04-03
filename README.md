@@ -15,3 +15,11 @@ The project was developed in 2 stages:
 2. Updated active learning pipeline - I then implemented a faster TF-IDF + logistic regression pipeline, and I split the dataset into: a test set, a training pool, an initial labeled set of 60 samples, and an unlabeled pool. The 3 strategies I tested were random, entropy, and margin sampling. In each round, the model was retrained after adding more labeled samples from the pool.
 
 Repository Structure:
+- notebooks: Contains the code files for RoBERTa and TF-IDF+LR
+- results.zip: Contains images of the outputs after running the code
+- Sentences_75Agree.txt: Data file for code
+  
+Instructions for how to run the code files: I developed and tested this project using Google Colab, so these instructions show how to run it on there.
+1. Download and open the .ipynb files from the notebooks/ folder (I would recommend just running the TF_IDF+LR file, because it has my main results and takes way less time).
+2. Download the Sentences_75Agree.txt data file, and upload that into the Colab session. Change the file path in the notebook if needed (e.g. /content/Sentences_75Agree.txt).
+3. Run all cells in order.

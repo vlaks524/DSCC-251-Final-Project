@@ -16,6 +16,7 @@ The project was developed in 2 stages:
 
 Repository Structure:
 - notebooks: Contains the code files for RoBERTa and TF-IDF+LR
+- README
 - results.zip: Contains images of the outputs after running the code (view raw)
 
 Here's the link to download the Financial PhraseBank dataset: https://www.researchgate.net/publication/251231364_FinancialPhraseBank-v10

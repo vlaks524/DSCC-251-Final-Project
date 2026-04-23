@@ -9,15 +9,15 @@ This project uses the Financial PhraseBank dataset, which contains financial new
 I used the Sentences_75Agree.txt version of the dataset because it provides a good balance between dataset size and label reliability.
 
 Methodology:
-The project was developed in 2 stages:
-1. Initial RoBERTa experiment - I first tested a RoBERTa-based classifier in a low-label setting, using an initial labeled set of 60 samples. This was meant to simulate a realistic setting where labeled financial data is limited. However, RoBERTa was slow to train and performed poorly with a small labeled set.
+The project was developed in 2 stages (UPDATED):
+1. Initial RoBERTa experiment - I first tested a RoBERTa-based classifier in a somewhat low-label setting, using an initial labeled set of 300 samples. This was meant to simulate a realistic setting where labeled financial data is limited. After switching to GPU, RoBERTa ran much faster.
    
 2. Updated active learning pipeline - I then implemented a faster TF-IDF + logistic regression pipeline, and I split the dataset into: a test set, a training pool, an initial labeled set of 60 samples, and an unlabeled pool. The 3 strategies I tested were random, entropy, and margin sampling. In each round, the model was retrained after adding more labeled samples from the pool.
 
 Repository Structure:
-- notebooks: Contains the code files for RoBERTa and TF-IDF+LR
+- notebooks: Contains the code files for RoBERTa (new baseline + active learning experiments) and TF-IDF+LR
 - README
-- results.zip: Contains images of the outputs after running the code (view raw)
+- dscc251results2.zip: Contains images of the outputs after running the code (updated results, after improving RoBERTa)
 
 Here's the link to download the Financial PhraseBank dataset: https://www.researchgate.net/publication/251231364_FinancialPhraseBank-v10
 
